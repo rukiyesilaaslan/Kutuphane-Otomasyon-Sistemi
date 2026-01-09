@@ -30,7 +30,10 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 2. Bağlantı Ayarları (Connection String)
 * Projenin veritabanınıza bağlanabilmesi için şu değişikliği yapmalısınız:
 * Visual Studio'da projeyi açın.
-* Formların kod kısmındaki (veya varsa App.config içindeki) bağlantı cümlesini bulun: ` string cs = @"Data Source=.\SQLEXPRESS;Initial Catalog=KutuphaneDB;Integrated Security=True;TrustServerCertificate=True"; `
+* Formların kod kısmındaki (veya varsa App.config içindeki) bağlantı cümlesini bulun:
+```csharp
+string cs = @"Data Source=.\SQLEXPRESS;Initial Catalog=KutuphaneDB;Integrated Security=True;TrustServerCertificate=True";
+```
 * Server kısmını kendi SQL Server adınızla (Örn: `localhost` veya `BILGISAYAR-ADI\SQLEXPRESS`) değiştirin.
 
 3. Uygulamayı Başlatma
